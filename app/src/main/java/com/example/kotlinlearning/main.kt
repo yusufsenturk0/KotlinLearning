@@ -112,24 +112,33 @@ fun main(){
 //        println(num)
 //    }
 
-//****************Fonksiyonlar ve Siniflar********************
-    firstFun()
-    addTwoNum(12,23)
-//----------Return----------
-    val result=add(12,23)
-    println(result)
+//****************Fonksiyonlar********************
+//    firstFun()
+//    addTwoNum(12,23)
+////----------Return----------
+//    val result=add(12,23)
+//    println(result)
+
+//********************Classes********************
+    val superman=SuperKahraman("Clark Cent",20,"Gazateci")
+
+    println("Name-->${superman.name}\n" +
+            "Age-->${superman.age}\n" +
+            "Jıb-->${superman.job}\n")
+
+
 }
 
 
 
 //****************Fonksiyonlar ve Siniflar********************
-fun firstFun(){//we call this fun in Main function
-    println("Birinci fonksiyon çalıştı")
-}
-fun addTwoNum(num1: Int,num2: Int){//we call this fun in Main function
-    println("Result : ${num1*num2}")
-}
-//---------Return------------
-fun add(num1:Int,num2:Int):Int{//:Int (return type)
-    return num1+num2
-}
+//fun firstFun(){//we call this fun in Main function
+//    println("Birinci fonksiyon çalıştı")
+//}
+//fun addTwoNum(num1: Int,num2: Int){//we call this fun in Main function
+//    println("Result : ${num1*num2}")
+//}
+////---------Return------------
+//fun add(num1:Int,num2:Int):Int{//:Int (return type)
+//    return num1+num2
+//}
