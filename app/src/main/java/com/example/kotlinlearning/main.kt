@@ -116,15 +116,30 @@ fun main(){
 //    firstFun()
 //    addTwoNum(12,23)
 ////----------Return----------
-//    val result=add(12,23)
+//    var result=add(12,23)
 //    println(result)
 
 //********************Classes********************
-    val superman=SuperKahraman("Clark Cent",20,"Gazateci")
+//    val superman=SuperKahraman("Clark Cent",20,"Gazateci")
+//
+//    println("Name-->${superman.name}\n" +
+//            "Age-->${superman.age}\n" +
+//            "Jıb-->${superman.job}\n")
+//***************Nullability*********************
+    //(ornegin uygulama girdisi alırken ve onu integera cevirirken int ya da null yap diyoruz ve böylelikle hatalardan kurtuluyoruz stringi int e cevirmek gibi)
+    val userInput="yusuf şentürk"
+    val userInputInt=userInput.toIntOrNull()//burda toInt yaparsak ve "yusf" string böle ise uygulama hata olur bu yuzden ıntornull kullanıyoruz
+    if(userInputInt!=null){
+        println(userInputInt*2)//burda eger toIntOrNull kullanmayıp direk inte cevirip iki ile carparsak hata alabiliriz burda bu toIntOrNull methodu bunu engelliyor.int cevirdigimiz sey null degil ise islemi gerceklestir
+    }
 
-    println("Name-->${superman.name}\n" +
-            "Age-->${superman.age}\n" +
-            "Jıb-->${superman.job}\n")
+    var myDouble:Double?   //(degiskeni nullable olarak tanimliyoruz)
+
+//----------------Lateinit---------------
+    //mesela bu sınfım icinde ama main dısında superkahraman sınfından bir obje olusturcan ama degeri orda atmıcan-->
+    //javada mesela (SuperKahraman superKahraman;   )bu sekil yapıyoruz ya ama kotlinde böyle yapıyoz -->
+    //kotlinde mesela( lateinit var superKahraman : SuperKahraman ) böyle yapıyoz
+    //late initi böyle kullanıyoruz ama bunu basit int , string gibi degiskenlerde kullanamazsın
 
 
 }
