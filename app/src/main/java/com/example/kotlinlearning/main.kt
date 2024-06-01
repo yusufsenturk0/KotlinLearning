@@ -71,47 +71,65 @@ fun main(){
 
 //********************Kontroller and Donguler(if,for,while)************************
 //----------if-else----------
-    var  skor=5
-    if (skor==10){
-        println("ooooooooooo")
-    }
-    else if(skor>10){
-        println("aaaaaaaaaaaaaaaa")
-    }
-    else{
-        println("iiiiiiiiiiiiiiii")
-    }
-//-----------whene(swich case)------------
+//    var  skor=5
+//    if (skor==10){
+//        println("ooooooooooo")
+//    }
+//    else if(skor>10){
+//        println("aaaaaaaaaaaaaaaa")
+//    }
+//    else{
+//        println("iiiiiiiiiiiiiiii")
+//    }
+////-----------whene(swich case)------------
+//
+//    val not=0
+//    var notStr=""
+//    when(not){
+//        0->notStr="FF"
+//        1->notStr="DD"
+//        2->notStr="CC"
+//        3->notStr="BB"
+//        4->notStr="AA"
+//        else->println("Katılmadı")
+//
+//
+//    }
+////---------While-----------
+//    var j=0
+//    while(j<10){
+//        print(j)
+//        j++
+//    }
+////----------For-------------
+//    val dizi= arrayListOf(5,10,15,20,25)
+//
+//    for(num in dizi){
+//        println(num/5*3)
+//    }
+//    //range(0..9)
+//    for(num in 0..9){
+//        println(num)
+//    }
 
-    val not=0
-    var notStr=""
-    when(not){
-        0->notStr="FF"
-        1->notStr="DD"
-        2->notStr="CC"
-        3->notStr="BB"
-        4->notStr="AA"
-        else->println("Katılmadı")
-
-
-    }
-//---------While-----------
-    var j=0
-    while(j<10){
-        print(j)
-        j++
-    }
-//----------For-------------
-    val dizi= arrayListOf(5,10,15,20,25)
-
-    for(num in dizi){
-        println(num/5*3)
-    }
-    //range(0..9)
-    for(num in 0..9){
-        println(num)
-    }
+//****************Fonksiyonlar ve Siniflar********************
+    firstFun()
+    addTwoNum(12,23)
+//----------Return----------
+    val result=add(12,23)
+    println(result)
+}
 
 
 
+//****************Fonksiyonlar ve Siniflar********************
+fun firstFun(){//we call this fun in Main function
+    println("Birinci fonksiyon çalıştı")
+}
+fun addTwoNum(num1: Int,num2: Int){//we call this fun in Main function
+    println("Result : ${num1*num2}")
+}
+//---------Return------------
+fun add(num1:Int,num2:Int):Int{//:Int (return type)
+    return num1+num2
 }
