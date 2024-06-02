@@ -1,6 +1,6 @@
 package com.example.kotlinlearning
 
-class SuperKahraman(var name:String,var age:Int,var job:String) {
+class SuperKahraman(var name:String,var ozelGuc:String) {
     //*****************Classes***********
     //!!!!!Bu alttaki işlem yerine sadece class ın başına parametlerini yazabilirsin Kotlin de(Buna primary constucotr Deniyor)!!!!!!!!
    /* var name=""
@@ -14,5 +14,10 @@ class SuperKahraman(var name:String,var age:Int,var job:String) {
         this.job=job
     }*/
     //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    //--->--->-->Inheritance<---<---<-<---
+
+    fun kos(){
+        println("kahraman koştu")
+    }
 
 }

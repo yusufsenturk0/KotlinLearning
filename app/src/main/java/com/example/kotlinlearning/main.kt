@@ -126,20 +126,38 @@ fun main(){
 //            "Age-->${superman.age}\n" +
 //            "Jıb-->${superman.job}\n")
 //***************Nullability*********************
-    //(ornegin uygulama girdisi alırken ve onu integera cevirirken int ya da null yap diyoruz ve böylelikle hatalardan kurtuluyoruz stringi int e cevirmek gibi)
-    val userInput="yusuf şentürk"
-    val userInputInt=userInput.toIntOrNull()//burda toInt yaparsak ve "yusf" string böle ise uygulama hata olur bu yuzden ıntornull kullanıyoruz
-    if(userInputInt!=null){
-        println(userInputInt*2)//burda eger toIntOrNull kullanmayıp direk inte cevirip iki ile carparsak hata alabiliriz burda bu toIntOrNull methodu bunu engelliyor.int cevirdigimiz sey null degil ise islemi gerceklestir
-    }
-
-    var myDouble:Double?   //(degiskeni nullable olarak tanimliyoruz)
+//    //(ornegin uygulama girdisi alırken ve onu integera cevirirken int ya da null yap diyoruz ve böylelikle hatalardan kurtuluyoruz stringi int e cevirmek gibi)
+//    val userInput="yusuf şentürk"
+//    val userInputInt=userInput.toIntOrNull()//burda toInt yaparsak ve "yusf" string böle ise uygulama hata olur bu yuzden ıntornull kullanıyoruz
+//    if(userInputInt!=null){
+//        println(userInputInt*2)//burda eger toIntOrNull kullanmayıp direk inte cevirip iki ile carparsak hata alabiliriz burda bu toIntOrNull methodu bunu engelliyor.int cevirdigimiz sey null degil ise islemi gerceklestir
+//    }
+//
+//    var myDouble:Double?   //(degiskeni nullable olarak tanimliyoruz)
 
 //----------------Lateinit---------------
     //mesela bu sınfım icinde ama main dısında superkahraman sınfından bir obje olusturcan ama degeri orda atmıcan-->
     //javada mesela (SuperKahraman superKahraman;   )bu sekil yapıyoruz ya ama kotlinde böyle yapıyoz -->
     //kotlinde mesela( lateinit var superKahraman : SuperKahraman ) böyle yapıyoz
     //late initi böyle kullanıyoruz ama bunu basit int , string gibi degiskenlerde kullanamazsın
+
+    //-------->------------>OOP<---------<----------------<----------
+    //-----Encapsulation(private,public,protected,internal)-----
+    //Inheritance---->Diğer sınıfların fonksiyonlarını ve methodlarını kalıtım ile kullanabiliyoruz(kalıtım yapılan sınıfın basşına "open" yazılması gerekir)
+    //Polymorphism---->Aynı isimde fonksiyon yazabilde parametre sayısını değiştirerek
+    //Abstraction(Abstract class , Interface sınıf)----->
+    var atil=Sanatci("Atil",80,"Gitar")
+    println(atil.isim)
+    println(atil.enstruman)
+
+    var zeynep=Sanatci("Zeynep",35,"Batari")
+    atil.sarkiSoyle()
+    zeynep.sarkiSoyle()
+
+    atil.turuYazdir()
+    zeynep.turuYazdir()
+
+
 
 
 }
